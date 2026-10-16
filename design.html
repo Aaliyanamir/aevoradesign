@@ -841,12 +841,15 @@
         <h2>Send your inquiry</h2>
         <input id="nm" placeholder="Your name" required /><input
           id="ph"
+          type="tel"
+          inputmode="tel"
+          autocomplete="tel"
           placeholder="Phone or WhatsApp number"
           required
         /><textarea id="ms"></textarea>
         <div class="row">
           <button type="button" id="cn">Cancel</button
-          ><button class="pick">Continue to WhatsApp</button>
+          ><button type="submit" class="pick">Continue to WhatsApp</button>
         </div>
       </form>
     </div>
@@ -1779,14 +1782,15 @@ document.getElementById("pp").onclick = (e) => {
         }
         const m = `${$("#ms").value}\nName: ${$("#nm").value}\nPhone: ${$("#ph").value}`;
         if (WHATSAPP) {
-          window.open(
-            `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(m)}`,
-            "_blank",
-          );
+          const whatsappUrl = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(m)}`;
+          const whatsappWindow = window.open(whatsappUrl, "_blank");
+          if (!whatsappWindow) {
+            window.location.assign(whatsappUrl);
+            return;
+          }
         } else {
-          try {
-            navigator.clipboard.writeText(m);
-          } catch (_) {}
+          toast("WhatsApp is not configured. Please contact us directly.");
+          return;
         }
         $("#md").classList.remove("on");
         toast(WHATSAPP ? "Opening WhatsApp" : "Inquiry message copied");
