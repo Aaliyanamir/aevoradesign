@@ -770,6 +770,1168 @@
           gap: 12px;
         }
       }
+      .style-showcase,
+      .business-showcase {
+        padding: 64px 5vw 20px;
+        border-top: 1px solid var(--line);
+      }
+      .section-head {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 24px;
+        max-width: 1100px;
+        margin: 0 auto 24px;
+      }
+      .section-head h2 {
+        color: var(--g-dark);
+        font-size: clamp(34px, 5vw, 58px);
+        line-height: 1.05;
+      }
+      .section-head p {
+        max-width: 62ch;
+        margin-top: 10px;
+        color: var(--s);
+      }
+      .kicker {
+        margin: 0 0 8px !important;
+        color: var(--g) !important;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+      .style-total {
+        flex: 0 0 auto;
+        padding: 8px 13px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--surface);
+        color: var(--s);
+        font-size: 13px;
+      }
+      .style-chips {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        padding: 2px 0 18px;
+        scrollbar-width: thin;
+      }
+      .style-chip {
+        flex: 0 0 auto;
+        padding: 9px 15px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--surface);
+        color: var(--s);
+      }
+      .style-chip:hover {
+        border-color: var(--g);
+      }
+      .style-chip.on {
+        border-color: var(--g);
+        background: var(--g);
+        color: #fff;
+      }
+      .style-group {
+        margin: 0 auto 38px;
+        max-width: 1400px;
+      }
+      .style-group[hidden] {
+        display: none;
+      }
+      .style-group-head {
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+        margin-bottom: 14px;
+      }
+      .style-group-head h3 {
+        color: var(--g-dark);
+        font: 600 clamp(23px, 3vw, 32px) "Cormorant Garamond", Georgia, serif;
+      }
+      .style-group-head span {
+        color: var(--s);
+        font-size: 13px;
+      }
+      .style-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+        gap: 16px;
+      }
+      .style-card {
+        min-width: 0;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: var(--surface);
+        box-shadow: 0 8px 24px rgba(41, 34, 29, 0.045);
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          border-color 0.25s ease;
+      }
+      .style-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(107, 74, 54, 0.4);
+        box-shadow: 0 16px 34px rgba(41, 34, 29, 0.11);
+      }
+      .style-preview {
+        --demo-bg: #f7f4ef;
+        --demo-ink: #29221d;
+        --demo-accent: #6b4a36;
+        position: relative;
+        aspect-ratio: 1.58;
+        overflow: hidden;
+        padding: 12px;
+        background: var(--demo-bg);
+        color: var(--demo-ink);
+        isolation: isolate;
+      }
+      .preview-page {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        overflow: hidden;
+        padding: 9px;
+        border: 1px solid color-mix(in srgb, var(--demo-ink) 12%, transparent);
+        border-radius: 8px;
+        background: color-mix(in srgb, var(--demo-bg) 90%, white);
+      }
+      .preview-nav {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        height: 14px;
+        border-bottom: 1px solid color-mix(in srgb, var(--demo-ink) 12%, transparent);
+        padding-bottom: 6px;
+      }
+      .preview-nav b {
+        color: var(--demo-accent);
+        font-size: 10px;
+      }
+      .preview-nav span {
+        margin-right: auto;
+        font-size: 6px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+      .preview-nav i {
+        width: 14px;
+        height: 3px;
+        border-radius: 4px;
+        background: color-mix(in srgb, var(--demo-ink) 24%, transparent);
+      }
+      .preview-content {
+        display: grid;
+        grid-template-columns: 1fr 0.85fr;
+        align-items: center;
+        gap: 8px;
+        height: calc(100% - 18px);
+      }
+      .preview-copy small {
+        display: block;
+        margin-bottom: 5px;
+        color: var(--demo-accent);
+        font-size: 5px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+      }
+      .preview-copy strong {
+        display: block;
+        max-width: 12ch;
+        font: 700 clamp(12px, 1.6vw, 19px) / 1 "Manrope", sans-serif;
+        letter-spacing: -0.05em;
+      }
+      .preview-copy > span {
+        display: block;
+        width: 75%;
+        height: 3px;
+        margin-top: 6px;
+        border-radius: 4px;
+        background: color-mix(in srgb, var(--demo-ink) 24%, transparent);
+      }
+      .preview-copy em {
+        display: inline-block;
+        margin-top: 8px;
+        padding: 4px 7px;
+        border-radius: 4px;
+        background: var(--demo-accent);
+        color: var(--demo-bg);
+        font-size: 6px;
+        font-style: normal;
+        font-weight: 700;
+      }
+      .preview-art {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1;
+        overflow: hidden;
+        border-radius: 8px;
+        background:
+          radial-gradient(circle at 70% 28%, color-mix(in srgb, var(--demo-bg) 70%, white) 0 9%, transparent 10%),
+          linear-gradient(140deg, var(--demo-accent), color-mix(in srgb, var(--demo-accent) 25%, var(--demo-ink)));
+      }
+      .preview-art i,
+      .preview-art b,
+      .preview-art span {
+        position: absolute;
+        display: block;
+        border-radius: 50%;
+      }
+      .preview-art i {
+        width: 60%;
+        aspect-ratio: 1;
+        top: 17%;
+        left: 21%;
+        background: color-mix(in srgb, var(--demo-bg) 82%, transparent);
+      }
+      .preview-art b {
+        width: 42%;
+        aspect-ratio: 1;
+        right: 9%;
+        bottom: 1%;
+        background: color-mix(in srgb, var(--demo-accent) 58%, white);
+      }
+      .preview-art span {
+        width: 24%;
+        aspect-ratio: 1;
+        left: 7%;
+        bottom: 12%;
+        background: var(--demo-bg);
+      }
+      .style-description {
+        min-height: 54px;
+        padding: 12px 14px 0;
+        color: var(--s);
+        font-size: 13px;
+        line-height: 1.45;
+      }
+      .style-card-foot {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        padding: 8px 14px 14px;
+      }
+      .style-card-foot h4 {
+        color: var(--g-dark);
+        font-size: 15px;
+      }
+      .style-pick {
+        flex: 0 0 auto;
+        padding: 7px 10px;
+        border: 1px solid var(--g);
+        border-radius: 7px;
+        background: var(--surface);
+        color: var(--g-dark);
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .style-pick:hover {
+        background: var(--g-dark);
+        color: #fff;
+      }
+      .style-clay .preview-page,
+      .style-clay .preview-art {
+        border-radius: 18px;
+        box-shadow: 5px 6px 12px #343d5a2e, -5px -5px 12px #ffffffb8;
+      }
+      .style-neumorphism .preview-page,
+      .style-neumorphism .preview-art {
+        border: 0;
+        border-radius: 14px;
+        box-shadow: 6px 6px 12px #8790a633, -6px -6px 12px #ffffff;
+      }
+      .style-glassmorphism {
+        background: linear-gradient(135deg, #426b92, #b47d9e 55%, #e4bf8f);
+      }
+      .style-glassmorphism .preview-page,
+      .style-glassmorphism .preview-art {
+        border: 1px solid #ffffff80;
+        background: #ffffff45;
+        backdrop-filter: blur(8px);
+      }
+      .style-skeuomorphism .preview-page {
+        border: 3px ridge #916c43;
+        background: repeating-linear-gradient(8deg, #c7a579, #c7a579 4px, #b99160 5px, #b99160 8px);
+        box-shadow: inset 0 0 14px #513a254d;
+      }
+      .style-skeuomorphism .preview-art {
+        border: 3px ridge #d7c49e;
+        box-shadow: inset 0 0 10px #20150d80, 0 2px 4px #20150d66;
+      }
+      .style-aurora-ui {
+        background: radial-gradient(ellipse at 18% 18%, #ff9ccf, transparent 40%), radial-gradient(ellipse at 82% 30%, #5fd9ff, transparent 42%), #151633;
+      }
+      .style-aurora-ui .preview-page {
+        border-color: #ffffff70;
+        background: #11172dbd;
+        color: #fff;
+        backdrop-filter: blur(8px);
+      }
+      .style-bento-grid .preview-content {
+        grid-template-columns: 1fr 0.7fr;
+      }
+      .style-bento-grid .preview-page {
+        background: #e9eef4;
+      }
+      .style-bento-grid .preview-art {
+        border-radius: 6px 20px 6px 6px;
+      }
+      .style-neo-brutalism .preview-page {
+        border: 3px solid #171717;
+        border-radius: 0;
+        background: #fff8df;
+        box-shadow: 4px 4px 0 #171717;
+      }
+      .style-neo-brutalism .preview-art {
+        border: 3px solid #171717;
+        border-radius: 0;
+        box-shadow: 3px 3px 0 #171717;
+      }
+      .style-minimalism .preview-page {
+        border: 0;
+        border-radius: 0;
+        background: #fff;
+      }
+      .style-minimalism .preview-content {
+        grid-template-columns: 1.2fr 0.6fr;
+      }
+      .style-maximalism .preview-page {
+        border: 2px solid #210d52;
+        background: repeating-linear-gradient(135deg, #ff85bb 0 10px, #ffc94d 10px 20px);
+      }
+      .style-maximalism .preview-copy strong {
+        transform: rotate(-4deg);
+        color: #20104c;
+      }
+      .style-split-screen .preview-content {
+        grid-template-columns: 1fr 1fr;
+      }
+      .style-split-screen .preview-art {
+        height: calc(100% + 2px);
+        border-radius: 0;
+      }
+      .style-y2k-aesthetics .preview-page {
+        border: 2px solid #fff;
+        background: linear-gradient(135deg, #f7a6ff, #8ae5ff 55%, #fff3a6);
+      }
+      .style-y2k-aesthetics .preview-art {
+        border: 2px solid #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 12px #ff71df;
+      }
+      .style-retrofuturism .preview-page {
+        border-color: #e755ff;
+        background-color: #100d29;
+        background-image: linear-gradient(#e755ff22 1px, transparent 1px), linear-gradient(90deg, #e755ff22 1px, transparent 1px);
+        background-size: 12px 12px;
+        color: #f9f2ff;
+      }
+      .style-retrofuturism .preview-art {
+        border: 1px solid #63f7ff;
+        box-shadow: 0 0 12px #ea46ff99;
+      }
+      .style-flat-design-2 .preview-page {
+        border: 0;
+        background: #fff9ec;
+      }
+      .style-flat-design-2 .preview-art {
+        border-radius: 22px;
+        box-shadow: 3px 4px 0 color-mix(in srgb, var(--demo-ink) 13%, transparent);
+      }
+      .style-dark-mode-2 .preview-page {
+        border-color: #343a4d;
+        background: #151a27;
+        color: #f1f3fa;
+      }
+      .style-dark-mode-2 .preview-copy > span,
+      .style-dark-mode-2 .preview-nav i {
+        background: #a6b0c6;
+      }
+      .style-dark-mode-2 .preview-art {
+        box-shadow: 0 0 15px color-mix(in srgb, var(--demo-accent) 55%, transparent);
+      }
+      .style-dopamine-kawaii .preview-page {
+        border: 2px solid #ff90b8;
+        border-radius: 18px;
+        background: #fff4f8;
+      }
+      .style-dopamine-kawaii .preview-art {
+        border: 2px solid #fff;
+        border-radius: 35% 65% 60% 40%;
+        box-shadow: 0 4px 0 #ff90b866;
+      }
+      .style-scrapbook-collage .preview-page {
+        border: 0;
+        background: #f6edda;
+      }
+      .style-scrapbook-collage .preview-art {
+        transform: rotate(5deg);
+        border: 4px solid #fff;
+        border-radius: 2px;
+        box-shadow: 2px 4px 7px #241b1755;
+      }
+      .style-scrapbook-collage .preview-nav {
+        border-bottom-style: dashed;
+      }
+      .style-illustration-craft .preview-art {
+        border: 2px solid color-mix(in srgb, var(--demo-ink) 55%, transparent);
+        border-radius: 44% 56% 58% 42%;
+      }
+      .style-illustration-craft .preview-art i,
+      .style-illustration-craft .preview-art b,
+      .style-illustration-craft .preview-art span {
+        border-radius: 38% 62% 52% 48%;
+      }
+      .style-museumcore-editorial .preview-page {
+        border-radius: 0;
+        background: #f5f0e5;
+      }
+      .style-museumcore-editorial .preview-copy strong {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: clamp(16px, 2vw, 25px);
+        font-weight: 600;
+        letter-spacing: -0.02em;
+      }
+      .style-parallax-storytelling .preview-page {
+        background: linear-gradient(180deg, #b6d9e7, #f2e3cb 70%);
+      }
+      .style-parallax-storytelling .preview-art {
+        box-shadow: -10px 8px 0 #ffffff77, 7px 13px 0 color-mix(in srgb, var(--demo-accent) 50%, transparent);
+      }
+      .style-3d-hyperrealism .preview-page {
+        perspective: 320px;
+        background: #e6e9ef;
+      }
+      .style-3d-hyperrealism .preview-art {
+        transform: rotateY(-16deg) rotateX(7deg);
+        box-shadow: 10px 10px 0 #20263833, 0 14px 22px #14182144;
+      }
+      @media (max-width: 700px) {
+        .style-showcase,
+        .business-showcase {
+          padding: 44px 5vw 12px;
+        }
+        .section-head {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 12px;
+        }
+        .style-description {
+          min-height: 0;
+        }
+      }
+      .site-nav {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-left: auto;
+      }
+      .site-nav a {
+        color: var(--t);
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .site-nav a:hover {
+        color: var(--g);
+      }
+      header small {
+        margin-left: 0;
+      }
+      header > .cta2 {
+        margin-left: 8px;
+      }
+      header {
+        background: rgba(232, 196, 159, 0.96);
+        border-bottom-color: rgba(77, 53, 34, 0.12);
+      }
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+        align-items: center;
+        gap: clamp(18px, 3vw, 48px);
+        min-height: clamp(500px, 62vh, 610px);
+        margin: 14px 2.5vw 0;
+        padding: clamp(38px, 5.5vw, 76px);
+        border: 0;
+        border-radius: 18px;
+        background:
+          radial-gradient(ellipse at 82% 14%, rgba(255, 248, 235, 0.42), transparent 40%),
+          #e8c49f;
+      }
+      .hero h1 {
+        max-width: 11ch;
+        color: #241d17;
+        font: 600 clamp(40px, 5.15vw, 70px) / 0.99 Manrope, system-ui, sans-serif;
+        letter-spacing: -0.07em;
+      }
+      .hero p {
+        max-width: 48ch;
+        margin-top: 20px;
+        color: #594a3d;
+        font-size: clamp(15px, 1.3vw, 18px);
+      }
+      .hero .hb {
+        gap: 10px;
+      }
+      .hero .cta1 {
+        border-color: #272019;
+        background: #272019;
+        color: #fff8ef;
+      }
+      .hero .cta2 {
+        border-color: rgba(39, 32, 25, 0.45);
+        color: #272019;
+      }
+      .hero .cta1:hover,
+      .hero .cta2:hover {
+        box-shadow: 0 10px 24px rgba(62, 42, 25, 0.2);
+      }
+      .hero-visual {
+        position: relative;
+        display: grid;
+        width: 100%;
+        max-width: 700px;
+        aspect-ratio: 1.45;
+        place-items: center;
+        justify-self: end;
+        isolation: isolate;
+      }
+      .hero-visual::before,
+      .hero-visual::after {
+        position: absolute;
+        z-index: -1;
+        content: "";
+      }
+      .hero-visual::before {
+        inset: 5% 0 1% 13%;
+        border-radius: 48% 52% 43% 57%;
+        background: rgba(200, 128, 72, 0.2);
+        transform: rotate(-12deg);
+      }
+      .hero-visual::after {
+        top: 2%;
+        right: 8%;
+        width: 22%;
+        aspect-ratio: 1;
+        border: 1px solid rgba(77, 53, 34, 0.25);
+        border-radius: 50%;
+      }
+      .hero-window {
+        width: 92%;
+        overflow: hidden;
+        border: 1px solid rgba(68, 49, 33, 0.12);
+        border-radius: 13px;
+        background: #fffaf4;
+        box-shadow: 0 30px 75px rgba(83, 54, 29, 0.22);
+        transform: rotate(2deg);
+      }
+      .hero-window-top {
+        display: flex;
+        height: 34px;
+        align-items: center;
+        gap: 5px;
+        padding: 0 12px;
+        border-bottom: 1px solid #eee4d9;
+        color: #66584c;
+        font-size: 8px;
+      }
+      .hero-window-top i {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #d4b69a;
+      }
+      .hero-window-top i:first-child {
+        background: #bf795f;
+      }
+      .hero-window-top span {
+        margin: 0 auto;
+        padding-right: 27px;
+      }
+      .hero-site-preview {
+        display: grid;
+        grid-template-columns: 0.82fr 1.18fr;
+        min-height: 260px;
+        align-items: center;
+        gap: 12px;
+        padding: 18px;
+      }
+      .hero-site-copy small {
+        display: block;
+        margin-bottom: 10px;
+        color: #826145;
+        font-size: 8px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+      .hero-site-copy strong {
+        display: block;
+        color: #28221d;
+        font: 600 clamp(18px, 2.5vw, 31px) / 1.08 "Cormorant Garamond", Georgia, serif;
+        letter-spacing: -0.025em;
+      }
+      .hero-site-copy > span {
+        display: block;
+        margin-top: 8px;
+        color: #76685c;
+        font-size: 9px;
+        line-height: 1.5;
+      }
+      .hero-site-copy em {
+        display: inline-block;
+        margin-top: 13px;
+        padding: 7px 11px;
+        border-radius: 4px;
+        background: #38291e;
+        color: #fffaf4;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 600;
+      }
+      .hero-photo {
+        position: relative;
+        min-width: 0;
+        height: 235px;
+        overflow: hidden;
+        border-radius: 7px;
+        background: #d8bea2;
+      }
+      .hero-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .hero-photo::after {
+        position: absolute;
+        inset: 45% 0 0;
+        background: linear-gradient(transparent, rgba(37, 25, 16, 0.35));
+        content: "";
+      }
+      .hero-photo span {
+        position: absolute;
+        z-index: 1;
+        right: 10px;
+        bottom: 10px;
+        color: white;
+        font-size: 8px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .hero-float-card {
+        position: absolute;
+        right: 0;
+        bottom: 4%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 9px 14px 9px 9px;
+        border: 1px solid rgba(68, 49, 33, 0.1);
+        border-radius: 9px;
+        background: #fffaf4;
+        box-shadow: 0 14px 35px rgba(83, 54, 29, 0.18);
+        transform: rotate(-3deg);
+      }
+      .hero-float-card img {
+        width: 36px;
+        height: 36px;
+        border-radius: 5px;
+        object-fit: cover;
+      }
+      .hero-float-card span {
+        color: #514438;
+        font-size: 10px;
+        font-weight: 700;
+      }
+      .preview-art {
+        background: color-mix(in srgb, var(--demo-accent) 44%, var(--demo-bg));
+      }
+      .preview-art img {
+        position: absolute;
+        z-index: 0;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .preview-art i,
+      .preview-art b,
+      .preview-art span {
+        z-index: 1;
+        opacity: 0.24;
+        mix-blend-mode: screen;
+      }
+      @media (max-width: 900px) {
+        .hero {
+          grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+          gap: 16px;
+          padding-right: 4vw;
+          padding-left: 4vw;
+        }
+        .hero-site-preview {
+          grid-template-columns: 0.78fr 1.22fr;
+          min-height: 230px;
+          padding: 13px;
+        }
+        .hero-photo {
+          height: 195px;
+        }
+        .site-nav {
+          gap: 14px;
+        }
+      }
+      @media (max-width: 700px) {
+        header {
+          padding: 12px 5vw;
+        }
+        header > img {
+          width: 40px;
+          height: 40px;
+        }
+        header small {
+          display: none;
+        }
+        .site-nav {
+          display: none;
+        }
+        header > .cta2 {
+          margin-left: auto;
+        }
+        .hero {
+          grid-template-columns: 1fr;
+          gap: 18px;
+          min-height: 0;
+          margin: 10px 3vw 0;
+          padding: 38px 7vw 26px;
+          border-radius: 14px;
+        }
+        .hero h1 {
+          max-width: 12ch;
+          font-size: clamp(40px, 11vw, 58px);
+        }
+        .hero p {
+          margin-top: 14px;
+        }
+        .hero .hb {
+          margin-top: 20px;
+        }
+        .hero .cta1,
+        .hero .cta2 {
+          padding: 11px 14px;
+          font-size: 13px;
+        }
+        .hero-visual {
+          width: 100%;
+          max-width: 520px;
+          justify-self: center;
+        }
+        .hero-window {
+          width: 94%;
+        }
+        .hero-site-preview {
+          min-height: 215px;
+          gap: 9px;
+          padding: 12px;
+        }
+        .hero-site-copy strong {
+          font-size: clamp(19px, 5vw, 27px);
+        }
+        .hero-photo {
+          height: 190px;
+        }
+        .hero-float-card {
+          right: 1%;
+          bottom: 0;
+        }
+      }
+      @media (max-width: 420px) {
+        .hero-site-preview {
+          grid-template-columns: 0.72fr 1.28fr;
+          min-height: 190px;
+          gap: 7px;
+          padding: 9px;
+        }
+        .hero-photo {
+          height: 165px;
+        }
+        .hero-site-copy > span {
+          font-size: 8px;
+        }
+      }
+      :root {
+        --bg: #f5eee3;
+        --g: #8b6435;
+        --g-dark: #2d1b13;
+        --s: #79695a;
+        --t: #2e2119;
+        --line: #e4d7c4;
+        --surface: #fffaf1;
+        --surface-muted: #ece0d0;
+      }
+      body {
+        background: #f5eee3;
+      }
+      .style-showcase {
+        background: #f5eee3;
+      }
+      .style-showcase .style-card,
+      .style-showcase .style-total,
+      .style-showcase .style-chip {
+        border-color: #e4d7c4;
+        background-color: #fffaf1;
+      }
+      .style-showcase .style-chip.on {
+        border-color: #8b6435;
+        background: #2d1b13;
+        color: #fffaf1;
+      }
+      .style-showcase .style-chip:hover:not(.on) {
+        background: #efe2cf;
+      }
+      .style-showcase .style-card {
+        box-shadow: 0 8px 24px rgba(58, 38, 22, 0.07);
+      }
+      .style-showcase .style-card:hover {
+        border-color: #b49165;
+        box-shadow: 0 18px 36px rgba(58, 38, 22, 0.13);
+      }
+      .style-showcase .style-description {
+        color: #756454;
+      }
+      .style-showcase .style-card-foot h4,
+      .style-showcase .style-group-head h3,
+      .style-showcase .section-head h2,
+      .business-showcase .section-head h2 {
+        color: #342117;
+      }
+      .style-showcase .kicker {
+        color: #9c743e !important;
+      }
+      .business-showcase {
+        margin-top: 52px;
+        padding-top: 58px;
+        border-top: 0;
+        background: #2d1b13;
+        color: #f5eee3;
+      }
+      .business-showcase .section-head h2 {
+        color: #fff4e3;
+      }
+      .business-showcase .section-head p {
+        color: #d1bd9f;
+      }
+      .business-showcase .kicker {
+        color: #d5ad69 !important;
+      }
+      .business-showcase .tools input {
+        border-color: #674a37;
+        background: #fffaf1;
+      }
+      .business-showcase #cnt {
+        color: #e4d1b4;
+      }
+      .business-showcase .chips {
+        scrollbar-color: #9c794f #432b1e;
+      }
+      .business-showcase .chip {
+        border-color: #674a37;
+        background: #3b261b;
+        color: #f5eee3;
+      }
+      .business-showcase .chip i {
+        color: #d5ad69;
+      }
+      .business-showcase .chip:hover {
+        background: #513725;
+      }
+      .business-showcase .chip.on,
+      .business-showcase .chip.on i {
+        border-color: #c49a5a;
+        background: #c49a5a;
+        color: #2d1b13;
+      }
+      .business-showcase .card {
+        border-color: #654a38;
+        background: #fffaf1;
+      }
+      .business-showcase .mt b {
+        color: #342117;
+      }
+      .business-showcase .mt small {
+        color: #79695a;
+      }
+      .business-showcase .empty {
+        color: #f1e4d0;
+      }
+      .sf {
+        border-top: 1px solid #523a29;
+        background: #24160f;
+        color: #d1bd9f;
+      }
+      .sf b {
+        color: #e1bd7c;
+      }
+      .style-card {
+        cursor: pointer;
+      }
+      .style-card:focus-visible {
+        outline: 3px solid #a98043;
+        outline-offset: 4px;
+      }
+      .style-card-foot > span {
+        flex: 0 0 auto;
+        color: #8b6435;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .style-dialog {
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        max-width: none;
+        height: 100%;
+        max-height: none;
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+        border: 0;
+        background: #f5eee3;
+        color: #2e2119;
+      }
+      .style-dialog[open] {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
+      }
+      .style-dialog::backdrop {
+        background: rgba(27, 17, 12, 0.78);
+        backdrop-filter: blur(7px);
+      }
+      .style-dialog-visual {
+        position: sticky;
+        top: 0;
+        display: grid;
+        min-width: 0;
+        height: 100vh;
+        place-items: center;
+        overflow: hidden;
+        padding: clamp(24px, 5vw, 76px);
+        background: #2d1b13;
+      }
+      .style-dialog-visual::before,
+      .style-dialog-visual::after {
+        position: absolute;
+        width: 62%;
+        aspect-ratio: 1;
+        border: 1px solid rgba(222, 186, 126, 0.28);
+        border-radius: 50%;
+        content: "";
+      }
+      .style-dialog-visual::before {
+        transform: translate(-12%, 8%);
+      }
+      .style-dialog-visual::after {
+        width: 78%;
+        transform: translate(12%, -6%);
+      }
+      .style-dialog-visual img {
+        position: relative;
+        z-index: 1;
+        display: block;
+        width: 100%;
+        max-width: 800px;
+        max-height: calc(100vh - 128px);
+        aspect-ratio: 1.2;
+        border: 1px solid rgba(255, 250, 241, 0.24);
+        border-radius: 10px;
+        background: #e4d7c4;
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.35);
+        object-fit: cover;
+      }
+      .style-dialog-copy {
+        position: relative;
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        padding: clamp(32px, 5vw, 78px);
+      }
+      .style-dialog-close {
+        position: absolute;
+        top: max(24px, env(safe-area-inset-top));
+        right: max(24px, env(safe-area-inset-right));
+        display: grid;
+        width: 46px;
+        height: 46px;
+        place-items: center;
+        border: 1px solid #dac9af;
+        border-radius: 50%;
+        background: #fffaf1;
+        color: #2d1b13;
+        font-size: 25px;
+        line-height: 1;
+        transition:
+          background 0.2s ease,
+          color 0.2s ease,
+          transform 0.2s ease;
+      }
+      .style-dialog-close:hover {
+        transform: rotate(90deg);
+        background: #2d1b13;
+        color: #fffaf1;
+      }
+      .style-dialog-kicker {
+        margin-bottom: 16px;
+        color: #9c743e;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+      .style-dialog-copy h2 {
+        max-width: 13ch;
+        color: #2d1b13;
+        font: 600 clamp(38px, 5vw, 72px) / 0.98 "Cormorant Garamond", Georgia, serif;
+        letter-spacing: -0.035em;
+      }
+      .style-dialog-category {
+        display: inline-flex;
+        align-self: flex-start;
+        margin-top: 20px;
+        padding: 8px 12px;
+        border: 1px solid #dfceb1;
+        border-radius: 999px;
+        color: #68533c;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .style-dialog-description {
+        max-width: 46ch;
+        margin-top: 22px;
+        color: #6d5b4a;
+        font-size: clamp(16px, 1.4vw, 19px);
+        line-height: 1.8;
+      }
+      .style-dialog-palette {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        margin-top: 30px;
+      }
+      .style-dialog-swatch {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        color: #62503f;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .style-dialog-swatch i {
+        width: 28px;
+        height: 28px;
+        border: 1px solid rgba(45, 27, 19, 0.14);
+        border-radius: 50%;
+      }
+      .style-dialog-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 36px;
+      }
+      .style-dialog-actions button {
+        min-height: 48px;
+        padding: 12px 20px;
+        border: 1px solid #2d1b13;
+        border-radius: 6px;
+        background: transparent;
+        color: #2d1b13;
+        font-size: 14px;
+        font-weight: 700;
+        transition:
+          background 0.2s ease,
+          color 0.2s ease;
+      }
+      .style-dialog-actions .style-dialog-choose {
+        background: #2d1b13;
+        color: #fffaf1;
+      }
+      .style-dialog-actions button:hover {
+        background: #c49a5a;
+        color: #2d1b13;
+      }
+      @media (max-width: 900px) {
+        .style-dialog[open] {
+          grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr);
+        }
+        .style-dialog-visual {
+          padding: 32px;
+        }
+        .style-dialog-copy {
+          padding: 72px 32px 32px;
+        }
+      }
+      @media (max-width: 650px) {
+        .business-showcase {
+          margin-top: 34px;
+          padding-top: 42px;
+        }
+        .style-dialog[open] {
+          display: flex;
+          flex-direction: column;
+        }
+        .style-dialog-visual {
+          position: relative;
+          flex: 0 0 auto;
+          height: min(42vh, 360px);
+          min-height: 230px;
+          padding: 24px 9vw;
+        }
+        .style-dialog-visual img {
+          width: 100%;
+          height: 100%;
+          max-height: none;
+          aspect-ratio: auto;
+        }
+        .style-dialog-copy {
+          min-height: auto;
+          padding: 30px 7vw calc(36px + env(safe-area-inset-bottom));
+        }
+        .style-dialog-close {
+          top: 12px;
+          right: 12px;
+          z-index: 2;
+          width: 42px;
+          height: 42px;
+        }
+        .style-dialog-kicker {
+          margin-bottom: 10px;
+        }
+        .style-dialog-copy h2 {
+          max-width: 15ch;
+          font-size: clamp(36px, 10vw, 54px);
+        }
+        .style-dialog-category {
+          margin-top: 14px;
+        }
+        .style-dialog-description {
+          margin-top: 14px;
+          font-size: 15px;
+        }
+        .style-dialog-palette {
+          gap: 12px;
+          margin-top: 20px;
+        }
+        .style-dialog-actions {
+          margin-top: 24px;
+        }
+        .style-dialog-actions button {
+          flex: 1 1 auto;
+        }
+      }
     </style>
   </head>
   <body>
@@ -792,30 +1954,136 @@
       <img
         src="data:image/jpeg;base64,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"
         alt=""
-      /><b>Aevora Studio</b><small>Helping Businesses Grow Online</small
-      ><button class="cta2" id="hq">Get a quote</button>
+      /><b>Aevora Studio</b>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#styles">Website styles</a>
+        <a href="#business-designs">Business examples</a>
+      </nav>
+      <small>Helping Businesses Grow Online</small>
+      <button class="cta2" id="hq">Get a quote</button>
     </header>
     <section class="hero">
-      <canvas id="pc" aria-hidden="true"></canvas>
       <div class="hc">
-        <h1>Pick the website your business deserves.</h1>
+        <h1>What should your website feel like?</h1>
         <p id="hp"></p>
         <div class="hb">
-          <a class="cta1" href="#chips">Browse designs</a
+          <a class="cta1" href="#styles">Explore visual styles</a
+          ><a class="cta2" href="#business-designs">Browse business examples</a
           ><button class="cta2" id="gq">Get a quote</button>
         </div>
       </div>
+      <div class="hero-visual" role="img" aria-label="Website design preview with a warm interior photograph">
+        <div class="hero-window">
+          <div class="hero-window-top">
+            <i></i><i></i><i></i><span>aevorastudio.com / inspiration</span>
+          </div>
+          <div class="hero-site-preview">
+            <div class="hero-site-copy">
+              <small>Aevora Studio · Website styles</small>
+              <strong>Find a look that feels like you.</strong>
+              <span>Explore visual styles and choose what suits your business.</span>
+              <em>Explore 20 styles</em>
+            </div>
+            <div class="hero-photo">
+              <img
+                src="assets/styles/hero-interior.jpg"
+                alt=""
+                fetchpriority="high"
+              />
+              <span>Design inspiration</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-float-card">
+          <img src="assets/styles/glassmorphism.jpg" alt="" />
+          <span>20 visual styles to explore</span>
+        </div>
+      </div>
     </section>
-    <div class="tools">
-      <input
-        id="q"
-        type="search"
-        placeholder="Search your business type, e.g. bakery, clinic, gym"
-        aria-label="Search designs"
-      /><span id="cnt" aria-live="polite"></span>
-    </div>
-    <nav class="chips" id="chips" aria-label="Categories"></nav>
-    <main class="grid" id="grid"></main>
+    <section class="style-showcase" id="styles" aria-labelledby="styles-title">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Find your website look</p>
+          <h2 id="styles-title">Choose a visual direction</h2>
+          <p>
+            Explore styles by category. Pick the look you like and tell us about
+            your website.
+          </p>
+        </div>
+        <span class="style-total">20 styles · 4 categories</span>
+      </div>
+      <nav
+        class="style-chips"
+        id="style-chips"
+        aria-label="Website style categories"
+      ></nav>
+      <div id="style-groups"></div>
+    </section>
+    <dialog
+      class="style-dialog"
+      id="style-dialog"
+      aria-labelledby="style-dialog-title"
+      aria-describedby="style-dialog-description"
+    >
+      <div class="style-dialog-visual">
+        <img id="style-dialog-image" alt="" />
+      </div>
+      <div class="style-dialog-copy">
+        <button
+          class="style-dialog-close"
+          id="style-dialog-close"
+          type="button"
+          aria-label="Close style details"
+        >
+          &times;
+        </button>
+        <p class="style-dialog-kicker">A website design direction</p>
+        <h2 id="style-dialog-title"></h2>
+        <span class="style-dialog-category" id="style-dialog-category"></span>
+        <p class="style-dialog-description" id="style-dialog-description"></p>
+        <div
+          class="style-dialog-palette"
+          id="style-dialog-palette"
+          aria-label="Style colour palette"
+        ></div>
+        <div class="style-dialog-actions">
+          <button type="button" id="style-dialog-back">Back to styles</button>
+          <button
+            class="style-dialog-choose"
+            type="button"
+            id="style-dialog-choose"
+          >
+            Choose this style
+          </button>
+        </div>
+      </div>
+    </dialog>
+    <section
+      class="business-showcase"
+      id="business-designs"
+      aria-labelledby="business-title"
+    >
+      <div class="section-head">
+        <div>
+          <p class="kicker">Designs for your industry</p>
+          <h2 id="business-title">Browse business examples</h2>
+          <p>
+            Preview website concepts for different kinds of businesses and see
+            what works for your own.
+          </p>
+        </div>
+      </div>
+      <div class="tools">
+        <input
+          id="q"
+          type="search"
+          placeholder="Search your business type, e.g. bakery, clinic, gym"
+          aria-label="Search business designs"
+        /><span id="cnt" aria-live="polite"></span>
+      </div>
+      <nav class="chips" id="chips" aria-label="Business categories"></nav>
+      <main class="grid" id="grid"></main>
+    </section>
     <footer class="sf">
       <b>Aevora Studio</b>
       <p>
@@ -909,6 +2177,233 @@ Interiors & Build|Blueprint Builders|Construction with clear timelines|#101418|#
             const [c, b, t, bg, fg, ac, f, ly, it] = l.split("|");
             return { c, b, t, bg, fg, ac, f, ly: +ly, it: it.split(",") };
           });
+
+      const STYLE_GROUPS = [
+        {
+          id: "tactile",
+          name: "Tactile & Depth-Based Styles",
+          styles: [
+            {
+              id: "clay",
+              name: "Claymorphism",
+              description: "Puffy, rounded shapes with soft, playful 3D shadows.",
+              bg: "#e8edff",
+              fg: "#282e48",
+              accent: "#8172df",
+              image: "clay.jpg",
+              imageAlt: "Freshly baked bread displayed in a warm bakery",
+            },
+            {
+              id: "neumorphism",
+              name: "Neumorphism",
+              description: "Subtle raised and inset surfaces blended into the background.",
+              bg: "#e8ecf2",
+              fg: "#3b4352",
+              accent: "#7184a8",
+              image: "neumorphism.jpg",
+              imageAlt: "Sculptural pendant lighting in a calm interior",
+            },
+            {
+              id: "glassmorphism",
+              name: "Glassmorphism",
+              description: "Frosted glass panels, translucent layers and blurred colour.",
+              bg: "#426b92",
+              fg: "#fff",
+              accent: "#d794c0",
+              image: "glassmorphism.jpg",
+              imageAlt: "Soft modern living room with layered glass and light",
+            },
+            {
+              id: "skeuomorphism",
+              name: "Skeuomorphism",
+              description: "Familiar real-world textures, materials and tactile controls.",
+              bg: "#c7a579",
+              fg: "#302219",
+              accent: "#83552c",
+              image: "skeuomorphism.jpg",
+              imageAlt: "Laptop and desk setup with tactile real-world details",
+            },
+            {
+              id: "aurora-ui",
+              name: "Aurora UI / Flow Gradient",
+              description: "Luminous, flowing colour gradients with a dreamy glass-like feel.",
+              bg: "#151633",
+              fg: "#f9f2ff",
+              accent: "#63d8ff",
+              image: "aurora-ui.jpg",
+              imageAlt: "Colourful live music performance with flowing lights",
+            },
+          ],
+        },
+        {
+          id: "layout",
+          name: "Layout & Structural Styles",
+          styles: [
+            {
+              id: "bento-grid",
+              name: "Bento Grid",
+              description: "Modular panels arrange key content into a tidy visual grid.",
+              bg: "#e9eef4",
+              fg: "#192336",
+              accent: "#5d73d9",
+              image: "bento-grid.jpg",
+              imageAlt: "Dashboard charts and modular data panels",
+            },
+            {
+              id: "neo-brutalism",
+              name: "Neo-Brutalism",
+              description: "Bold colour, thick black outlines and unapologetic hard shadows.",
+              bg: "#fff8df",
+              fg: "#171717",
+              accent: "#ff5a36",
+              image: "neo-brutalism.jpg",
+              imageAlt: "Bold graphic camera and creative photography setup",
+            },
+            {
+              id: "minimalism",
+              name: "Minimalism / Swiss Style",
+              description: "Clean grids, crisp typography and generous negative space.",
+              bg: "#fff",
+              fg: "#171717",
+              accent: "#e03a2d",
+              image: "minimalism.jpg",
+              imageAlt: "Quiet, orderly shelves in a modern library",
+            },
+            {
+              id: "maximalism",
+              name: "Maximalism / Gen Z Bold",
+              description: "Expressive colour, layered content and energetic visual contrast.",
+              bg: "#ff85bb",
+              fg: "#20104c",
+              accent: "#ffc94d",
+              image: "maximalism.jpg",
+              imageAlt: "Colourful festival lights and energetic live crowd",
+            },
+            {
+              id: "split-screen",
+              name: "Split-Screen / Asymmetric",
+              description: "A striking two-part composition balances text and imagery.",
+              bg: "#f3ede3",
+              fg: "#27211c",
+              accent: "#a94c35",
+              image: "split-screen.jpg",
+              imageAlt: "Fashion portrait in a modern editorial setting",
+            },
+          ],
+        },
+        {
+          id: "color",
+          name: "Color & Nostalgia Aesthetics",
+          styles: [
+            {
+              id: "y2k-aesthetics",
+              name: "Y2K Aesthetics / Vaporwave",
+              description: "Holographic colour and playful throwback digital details.",
+              bg: "#f7a6ff",
+              fg: "#30204d",
+              accent: "#36c8ee",
+              image: "y2k.jpg",
+              imageAlt: "Bright modern electronics with a nostalgic tech aesthetic",
+            },
+            {
+              id: "retrofuturism",
+              name: "Retrofuturism / Synthwave",
+              description: "Neon glow, glowing grids and an '80s-inspired future.",
+              bg: "#100d29",
+              fg: "#f9f2ff",
+              accent: "#e755ff",
+              image: "retrofuturism.jpg",
+              imageAlt: "Night sky and glowing cosmic colours",
+            },
+            {
+              id: "flat-design-2",
+              name: "Flat Design 2.0",
+              description: "Simple shapes and friendly colour, lifted with gentle depth.",
+              bg: "#fff9ec",
+              fg: "#293446",
+              accent: "#4188d8",
+              image: "flat-design.jpg",
+              imageAlt: "A clean, simple product photograph of a smartphone",
+            },
+            {
+              id: "dark-mode-2",
+              name: "Dark Mode 2.0",
+              description: "Deep, easy-on-the-eyes surfaces with crisp accessible contrast.",
+              bg: "#151a27",
+              fg: "#f1f3fa",
+              accent: "#65d6bc",
+              image: "dark-mode.jpg",
+              imageAlt: "Earth and stars against a deep, dark sky",
+            },
+            {
+              id: "dopamine-kawaii",
+              name: "Dopamine / Kawaii Design",
+              description: "Cheerful pastels, cute shapes and bright, joyful details.",
+              bg: "#fff4f8",
+              fg: "#4b2940",
+              accent: "#ff70a6",
+              image: "dopamine.jpg",
+              imageAlt: "Bright pink flowers in a cheerful pastel palette",
+            },
+          ],
+        },
+        {
+          id: "creative",
+          name: "Creative & Artistic Approaches",
+          styles: [
+            {
+              id: "scrapbook-collage",
+              name: "Scrapbook / Collage",
+              description: "Layered cut-outs, paper textures and handmade-looking details.",
+              bg: "#f6edda",
+              fg: "#382d22",
+              accent: "#d7754c",
+              image: "scrapbook.jpg",
+              imageAlt: "Artist's colourful studio with handmade artwork",
+            },
+            {
+              id: "illustration-craft",
+              name: "Illustration-Focused / Craft",
+              description: "Organic shapes and handcrafted artwork give brands a personal feel.",
+              bg: "#f4eadf",
+              fg: "#382a24",
+              accent: "#4e8a68",
+              image: "illustration.jpg",
+              imageAlt: "Paints and brushes arranged in an artist's studio",
+            },
+            {
+              id: "museumcore-editorial",
+              name: "Museumcore / Editorial",
+              description: "Elegant serif typography and refined, magazine-like composition.",
+              bg: "#f5f0e5",
+              fg: "#28231f",
+              accent: "#896b4b",
+              image: "museumcore.jpg",
+              imageAlt: "Classic book pages and archival editorial materials",
+            },
+            {
+              id: "parallax-storytelling",
+              name: "Parallax / Storytelling UX",
+              description: "Layered scenery suggests depth and a journey through the page.",
+              bg: "#b6d9e7",
+              fg: "#173445",
+              accent: "#428596",
+              image: "parallax.jpg",
+              imageAlt: "Layered mountain ridges receding into the distance",
+            },
+            {
+              id: "3d-hyperrealism",
+              name: "3D Hyperrealism / Spatial UI",
+              description: "Dimensional product-style visuals with a spatial, interactive feel.",
+              bg: "#e6e9ef",
+              fg: "#202638",
+              accent: "#6e81db",
+              image: "3d-hyperrealism.jpg",
+              imageAlt: "Dimensional modern architectural form and shadows",
+            },
+          ],
+        },
+      ];
 
       const MEDIA = {
         "Noor Atelier": {
@@ -1696,6 +3191,146 @@ document.getElementById("pp").onclick = (e) => {
       const CATS = ["All", ...new Set(D.map((d) => d.c))];
       let cat = "All",
         cur = null;
+      let selectedVisualStyle = null;
+      const STYLE_OPTIONS = STYLE_GROUPS.flatMap((group) =>
+        group.styles.map((style) => ({ ...style, category: group.name })),
+      );
+      $("#style-chips").innerHTML = [
+        '<button class="style-chip on" data-style-category="all" aria-pressed="true">All styles</button>',
+        ...STYLE_GROUPS.map(
+          (group) =>
+            `<button class="style-chip" data-style-category="${group.id}" aria-pressed="false">${group.name}</button>`,
+        ),
+      ].join("");
+      $("#style-groups").innerHTML = STYLE_GROUPS.map(
+        (group) => `
+          <section class="style-group" data-style-group="${group.id}" aria-labelledby="style-group-${group.id}">
+            <div class="style-group-head">
+              <h3 id="style-group-${group.id}">${group.name}</h3>
+              <span>${group.styles.length} styles</span>
+            </div>
+            <div class="style-grid">
+              ${group.styles
+                .map(
+                  (style) => `
+                    <article
+                      class="style-card"
+                      data-style="${style.id}"
+                      tabindex="0"
+                      role="button"
+                      aria-haspopup="dialog"
+                      aria-label="View ${style.name} style details"
+                    >
+                      <div class="style-preview style-${style.id}" style="--demo-bg:${style.bg};--demo-ink:${style.fg};--demo-accent:${style.accent}" aria-hidden="true">
+                        <div class="preview-page">
+                          <div class="preview-nav"><b>A</b><span>STUDIO</span><i></i><i></i><i></i></div>
+                          <div class="preview-content">
+                            <div class="preview-copy"><small>DESIGN YOUR WAY</small><strong>Good design starts here</strong><span></span><em>Explore</em></div>
+                            <div class="preview-art">
+                              <img
+                                src="assets/styles/${style.image}"
+                                alt="${style.imageAlt}"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                              <i></i><b></b><span></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="style-description">${style.description}</p>
+                      <div class="style-card-foot">
+                        <h4>${style.name}</h4>
+                        <span aria-hidden="true">View details &rarr;</span>
+                      </div>
+                    </article>`,
+                )
+                .join("")}
+            </div>
+          </section>`,
+      ).join("");
+      $("#style-chips").onclick = (e) => {
+        const button = e.target.closest("[data-style-category]");
+        if (!button) return;
+        const category = button.dataset.styleCategory;
+        $("#style-chips").querySelectorAll(".style-chip").forEach((chip) => {
+          const isActive = chip === button;
+          chip.classList.toggle("on", isActive);
+          chip.setAttribute("aria-pressed", String(isActive));
+        });
+        document.querySelectorAll("[data-style-group]").forEach((section) => {
+          section.hidden =
+            category !== "all" && section.dataset.styleGroup !== category;
+        });
+      };
+      $("#style-groups").onclick = (e) => {
+        const card = e.target.closest(".style-card[data-style]");
+        if (!card) return;
+        showStyleDetails(
+          card.dataset.style,
+          card,
+        );
+      };
+      $("#style-groups").onkeydown = (e) => {
+        const card = e.target.closest(".style-card[data-style]");
+        if (!card || (e.key !== "Enter" && e.key !== " ")) return;
+        e.preventDefault();
+        showStyleDetails(card.dataset.style, card);
+      };
+      const styleDialog = $("#style-dialog");
+      function showStyleDetails(id, trigger) {
+        const style = STYLE_OPTIONS.find((option) => option.id === id);
+        if (!style) {
+          toast("This style could not be selected. Please refresh and try again.");
+          return;
+        }
+        selectedVisualStyle = style;
+        $("#style-dialog-image").src = `assets/styles/${style.image}`;
+        $("#style-dialog-image").alt = style.imageAlt;
+        $("#style-dialog-title").textContent = style.name;
+        $("#style-dialog-category").textContent = style.category;
+        $("#style-dialog-description").textContent = style.description;
+        $("#style-dialog-palette").innerHTML = [
+          ["Background", style.bg],
+          ["Text", style.fg],
+          ["Accent", style.accent],
+        ]
+          .map(
+            ([name, color]) =>
+              `<span class="style-dialog-swatch"><i style="background:${color}" aria-hidden="true"></i>${name} ${color}</span>`,
+          )
+          .join("");
+        styleDialog.returnValue = "";
+        styleDialog._trigger = trigger;
+        styleDialog.showModal();
+      }
+      function chooseVisualStyle() {
+        if (!selectedVisualStyle) {
+          toast("Choose a style to continue.");
+          return;
+        }
+        const style = selectedVisualStyle;
+        if (styleDialog.open) styleDialog.close();
+        cur = null;
+        $("#ms").value =
+          `Hello Aevora Studio, I like the "${style.name}" website style (${style.category}). I would like a website in this style for my business. Please contact me.`;
+        $("#md").classList.add("on");
+      }
+      $("#style-dialog-close").onclick = () => styleDialog.close();
+      $("#style-dialog-back").onclick = () => styleDialog.close();
+      $("#style-dialog-choose").onclick = chooseVisualStyle;
+      styleDialog.onclick = (e) => {
+        if (e.target === styleDialog) styleDialog.close();
+      };
+      styleDialog.onclose = () => {
+        const trigger = styleDialog._trigger;
+        if (trigger && trigger.isConnected) trigger.focus();
+        styleDialog._trigger = null;
+      };
+      styleDialog.oncancel = (e) => {
+        e.preventDefault();
+        styleDialog.close();
+      };
       $("#chips").innerHTML = CATS.map(
         (c) =>
           `<button class="chip${c === "All" ? " on" : ""}" data-c="${c}"><i class="fa-solid ${ICON[c] || "fa-shapes"}" aria-hidden="true"></i><span>${c}</span></button>`,
@@ -1803,9 +3438,13 @@ document.getElementById("pp").onclick = (e) => {
       }
       document.onkeydown = (e) => {
         if (e.key === "Escape") {
-          $("#md").classList.contains("on")
-            ? $("#md").classList.remove("on")
-            : close();
+          if (styleDialog.open) {
+            styleDialog.close();
+          } else if ($("#md").classList.contains("on")) {
+            $("#md").classList.remove("on");
+          } else {
+            close();
+          }
         }
       };
       const qt = () => {
@@ -1822,46 +3461,13 @@ document.getElementById("pp").onclick = (e) => {
         open(LST[(i + n + LST.length) % LST.length]);
       }
       $("#hp").textContent =
+        "Explore " +
+        STYLE_OPTIONS.length +
+        " visual styles across " +
+        STYLE_GROUPS.length +
+        " style categories, then browse " +
         D.length +
-        " live demo designs across " +
-        (CATS.length - 1) +
-        " business categories. Open any design on desktop or mobile, pick your favourite and send an inquiry in one tap.";
-      (() => {
-        const c = $("#pc"),
-          x = c.getContext("2d");
-        let w,
-          h,
-          P = [];
-        const rs = () => {
-          w = c.width = c.offsetWidth;
-          h = c.height = c.offsetHeight;
-          P = Array.from({ length: Math.min(70, (w / 18) | 0) }, () => ({
-            x: Math.random() * w,
-            y: Math.random() * h,
-            r: Math.random() * 2 + 0.5,
-            v: Math.random() * 0.4 + 0.1,
-            a: Math.random() * 6,
-          }));
-        };
-        rs();
-        addEventListener("resize", rs);
-        const rm = matchMedia("(prefers-reduced-motion:reduce)").matches;
-        const f = () => {
-          x.clearRect(0, 0, w, h);
-          P.forEach((p) => {
-            p.y -= p.v;
-            p.a += 0.02;
-            if (p.y < 0) p.y = h;
-            x.fillStyle =
-              "rgba(107,74,54," + (0.16 + 0.24 * Math.sin(p.a) ** 2) + ")";
-            x.beginPath();
-            x.arc(p.x, p.y, p.r, 0, 7);
-            x.fill();
-          });
-          if (!rm) requestAnimationFrame(f);
-        };
-        f();
-      })();
+        " business-specific demos. Choose a favourite and tell us what you want for your website.";
       render();
       const sk = () => $("#sp").classList.add("gone");
       setTimeout(sk, 3000);
