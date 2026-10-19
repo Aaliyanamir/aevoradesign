@@ -3417,18 +3417,13 @@ document.getElementById("pp").onclick = (e) => {
         }
         const m = `${$("#ms").value}\nName: ${$("#nm").value}\nPhone: ${$("#ph").value}`;
         if (WHATSAPP) {
-          const whatsappUrl = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(m)}`;
-          const whatsappWindow = window.open(whatsappUrl, "_blank");
-          if (!whatsappWindow) {
-            window.location.assign(whatsappUrl);
-            return;
-          }
+          const whatsappUrl = new URL(`https://wa.me/${WHATSAPP}`);
+          whatsappUrl.searchParams.set("text", m);
+          $("#md").classList.remove("on");
+          window.location.assign(whatsappUrl.toString());
         } else {
           toast("WhatsApp is not configured. Please contact us directly.");
-          return;
         }
-        $("#md").classList.remove("on");
-        toast(WHATSAPP ? "Opening WhatsApp" : "Inquiry message copied");
       };
       function toast(t) {
         const s = $("#ts");
