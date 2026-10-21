@@ -1613,60 +1613,224 @@
         color: #9c743e !important;
       }
       .business-showcase {
-        margin-top: 52px;
-        padding-top: 58px;
-        border-top: 0;
-        background: #2d1b13;
-        color: #f5eee3;
+        margin-top: 48px;
+        padding: 72px 5vw 64px;
+        border-top: 1px solid #e9e2d9;
+        background: #f6f4f0;
+        color: #29221d;
+        scroll-margin-top: 92px;
       }
       .business-showcase .section-head h2 {
-        color: #fff4e3;
+        color: #29221d;
       }
       .business-showcase .section-head p {
-        color: #d1bd9f;
+        color: #746b62;
       }
       .business-showcase .kicker {
-        color: #d5ad69 !important;
+        color: #8a6842 !important;
+      }
+      .business-showcase .section-head,
+      .business-showcase .tools,
+      .business-showcase .grid,
+      .business-showcase .see-all-row {
+        max-width: 1120px;
+        margin-right: auto;
+        margin-left: auto;
       }
       .business-showcase .tools input {
-        border-color: #674a37;
-        background: #fffaf1;
+        border-color: #ded7ce;
+        background: #fff;
+        box-shadow: 0 3px 12px rgba(42, 34, 27, 0.04);
+      }
+      .business-showcase .tools {
+        padding: 8px 0 18px;
       }
       .business-showcase #cnt {
-        color: #e4d1b4;
+        margin-left: auto;
+        color: #746b62;
+        font-size: 14px;
+        white-space: nowrap;
       }
-      .business-showcase .chips {
-        scrollbar-color: #9c794f #432b1e;
+      .business-showcase .tools select {
+        min-height: 48px;
+        flex: 0 1 250px;
+        padding: 10px 38px 10px 15px;
+        border: 1px solid #ded7ce;
+        border-radius: 999px;
+        background: #fff;
+        color: #3a3027;
+        font: inherit;
+        cursor: pointer;
+        box-shadow: 0 3px 12px rgba(42, 34, 27, 0.04);
       }
-      .business-showcase .chip {
-        border-color: #674a37;
-        background: #3b261b;
-        color: #f5eee3;
+      .business-showcase .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
       }
-      .business-showcase .chip i {
-        color: #d5ad69;
-      }
-      .business-showcase .chip:hover {
-        background: #513725;
-      }
-      .business-showcase .chip.on,
-      .business-showcase .chip.on i {
-        border-color: #c49a5a;
-        background: #c49a5a;
-        color: #2d1b13;
+      .business-showcase .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+        padding: 0;
       }
       .business-showcase .card {
-        border-color: #654a38;
-        background: #fffaf1;
+        overflow: hidden;
+        border: 1px solid #e7e1d8;
+        border-radius: 14px;
+        background: #fff;
+        box-shadow: 0 8px 24px rgba(42, 34, 27, 0.055);
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          border-color 0.25s ease;
+      }
+      .business-showcase .card:hover,
+      .business-showcase .card:focus-visible {
+        border-color: #c9b79f;
+        box-shadow: 0 16px 36px rgba(42, 34, 27, 0.11);
+        transform: translateY(-4px);
+      }
+      .business-showcase .th {
+        aspect-ratio: 16 / 10;
+        border: 0;
+        border-radius: 0;
+        background: #eee9e2;
+      }
+      .business-showcase .card:hover .th {
+        border-color: transparent;
+        box-shadow: none;
+        transform: none;
+      }
+      .business-showcase .th::after {
+        content: "Preview design  \2192";
+        right: 14px;
+        bottom: 14px;
+        padding: 8px 13px;
+        background: rgba(41, 34, 29, 0.9);
+        opacity: 1;
+        transform: none;
+        font-size: 12px;
+      }
+      .business-showcase .mt {
+        gap: 10px;
+        padding: 15px 17px 17px;
       }
       .business-showcase .mt b {
-        color: #342117;
+        display: block;
+        margin-top: 3px;
+        color: #29221d;
+        font-size: 15px;
       }
       .business-showcase .mt small {
-        color: #79695a;
+        display: block;
+        color: #746b62;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .business-showcase .mt p {
+        margin-top: 4px;
+        color: #746b62;
+        font-size: 12px;
+        line-height: 1.5;
+      }
+      .business-showcase .card-arrow {
+        display: grid;
+        width: 34px;
+        height: 34px;
+        flex: 0 0 auto;
+        place-items: center;
+        border: 1px solid #e7e1d8;
+        border-radius: 50%;
+        color: #5e4933;
+        transition:
+          background 0.2s ease,
+          color 0.2s ease;
+      }
+      .business-showcase .card:hover .card-arrow,
+      .business-showcase .card:focus-visible .card-arrow {
+        border-color: #382c22;
+        background: #382c22;
+        color: #fff;
       }
       .business-showcase .empty {
-        color: #f1e4d0;
+        color: #746b62;
+      }
+      .business-showcase .see-all-row {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+      }
+      .business-showcase .see-all {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 46px;
+        padding: 10px 22px;
+        border: 1px solid #382c22;
+        border-radius: 999px;
+        background: #382c22;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+        transition:
+          background 0.2s ease,
+          color 0.2s ease,
+          transform 0.2s ease;
+      }
+      .business-showcase .see-all:hover {
+        transform: translateY(-2px);
+        background: #fff;
+        color: #382c22;
+      }
+      .business-showcase .see-all[hidden] {
+        display: none;
+      }
+      .gallery-back {
+        display: none;
+        align-items: center;
+        gap: 8px;
+        color: #493b2d;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .gallery-back:hover {
+        color: #98754b;
+      }
+      body.gallery-page .hero,
+      body.gallery-page .style-showcase {
+        display: none;
+      }
+      body.gallery-page header .site-nav,
+      body.gallery-page header > small {
+        display: none;
+      }
+      body.gallery-page header .gallery-back {
+        display: inline-flex;
+        margin-left: auto;
+      }
+      body.gallery-page .business-showcase {
+        margin-top: 0;
+        padding-top: 54px;
+        min-height: calc(100vh - 170px);
+      }
+      body.gallery-page .business-showcase .section-head {
+        margin-bottom: 28px;
+      }
+      body.gallery-page .business-showcase .section-head h2 {
+        font-size: clamp(38px, 5vw, 64px);
+      }
+      @media (max-width: 900px) {
+        .business-showcase .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
       }
       .sf {
         border-top: 1px solid #523a29;
@@ -1876,8 +2040,25 @@
       }
       @media (max-width: 650px) {
         .business-showcase {
-          margin-top: 34px;
-          padding-top: 42px;
+          margin-top: 32px;
+          padding: 44px 5vw 48px;
+        }
+        body.gallery-page .business-showcase {
+          margin-top: 0;
+          padding-top: 38px;
+        }
+        body.gallery-page header {
+          gap: 12px;
+        }
+        body.gallery-page header .gallery-back {
+          font-size: 13px;
+        }
+        .business-showcase .tools {
+          padding-top: 4px;
+        }
+        .business-showcase .grid {
+          grid-template-columns: 1fr;
+          gap: 16px;
         }
         .style-dialog[open] {
           display: flex;
@@ -2065,11 +2246,11 @@
     >
       <div class="section-head">
         <div>
-          <p class="kicker">Designs for your industry</p>
-          <h2 id="business-title">Browse business examples</h2>
+          <p class="kicker">Made for your industry</p>
+          <h2 id="business-title">Explore business designs</h2>
           <p>
-            Preview website concepts for different kinds of businesses and see
-            what works for your own.
+            Distinct website concepts, thoughtfully tailored to the way each
+            kind of business works.
           </p>
         </div>
       </div>
@@ -2077,12 +2258,19 @@
         <input
           id="q"
           type="search"
-          placeholder="Search your business type, e.g. bakery, clinic, gym"
+          placeholder="Search an industry, business, or product"
           aria-label="Search business designs"
-        /><span id="cnt" aria-live="polite"></span>
+        />
+        <label class="sr-only" for="category-filter">Filter by category</label>
+        <select id="category-filter"></select>
+        <span id="cnt" aria-live="polite"></span>
       </div>
-      <nav class="chips" id="chips" aria-label="Business categories"></nav>
       <main class="grid" id="grid"></main>
+      <div class="see-all-row">
+        <a class="see-all" id="see-all" href="design.html?view=all" hidden>
+          See all designs
+        </a>
+      </div>
     </section>
     <footer class="sf">
       <b>Aevora Studio</b>
@@ -2562,30 +2750,6 @@ Interiors & Build|Blueprint Builders|Construction with clear timelines|#101418|#
         "Music & Media": "wave,wave",
         "Sports & Outdoors": "mount,dumb",
         "Interiors & Build": "sofa,house",
-      };
-      const ICON = {
-        "Clothing & Fashion": "fa-shirt",
-        Beauty: "fa-wand-magic-sparkles",
-        "Home & Living": "fa-couch",
-        Electronics: "fa-mobile-screen-button",
-        Food: "fa-utensils",
-        "Specialty Stores": "fa-book-open",
-        Corporate: "fa-building",
-        Education: "fa-graduation-cap",
-        Healthcare: "fa-heart-pulse",
-        "Real Estate": "fa-house",
-        "Travel & Hospitality": "fa-plane",
-        "Lifestyle Services": "fa-spa",
-        "Digital Products & Web Apps": "fa-laptop-code",
-        Automotive: "fa-car",
-        Photography: "fa-camera",
-        "Finance & Fintech": "fa-chart-line",
-        "Non-profit": "fa-hand-holding-heart",
-        Pets: "fa-paw",
-        "Immigration & Visa": "fa-passport",
-        "Music & Media": "fa-headphones",
-        "Sports & Outdoors": "fa-person-hiking",
-        "Interiors & Build": "fa-compass-drafting",
       };
       {
         const n = {};
@@ -3188,9 +3352,37 @@ document.getElementById("pp").onclick = (e) => {
         vw = $("#vw"),
         vf = $("#vf"),
         fw = $("#fw");
+      const pageParams = new URLSearchParams(window.location.search);
+      const isGalleryPage = pageParams.get("view") === "all";
+      if (isGalleryPage) document.body.classList.add("gallery-page");
       const CATS = ["All", ...new Set(D.map((d) => d.c))];
-      let cat = "All",
+      const FEATURED = D.filter(
+        (d, i) => D.findIndex((item) => item.c === d.c) === i,
+      ).slice(0, 8);
+      const requestedCategory = pageParams.get("category");
+      let cat = CATS.includes(requestedCategory) ? requestedCategory : "All",
         cur = null;
+      if (isGalleryPage) {
+        const backLink = document.createElement("a");
+        const homeUrl = new URL(window.location.href);
+        homeUrl.search = "";
+        homeUrl.hash = "";
+        backLink.className = "gallery-back";
+        backLink.href = homeUrl.href;
+        backLink.innerHTML =
+          '<span aria-hidden="true">&larr;</span><span>Back to home</span>';
+        document.querySelector("header").insertBefore(backLink, $("#hq"));
+        document.querySelector(
+          ".business-showcase .kicker",
+        ).textContent = "The complete collection";
+        $("#business-title").textContent = "All business designs";
+        document.querySelector(
+          ".business-showcase .section-head div > p:not(.kicker)",
+        ).textContent =
+          "Explore every concept, compare directions, and find the right starting point for your business.";
+        document.title = "All Business Designs | Aevora Studio";
+        $("#q").value = pageParams.get("q") || "";
+      }
       let selectedVisualStyle = null;
       const STYLE_OPTIONS = STYLE_GROUPS.flatMap((group) =>
         group.styles.map((style) => ({ ...style, category: group.name })),
@@ -3331,20 +3523,21 @@ document.getElementById("pp").onclick = (e) => {
         e.preventDefault();
         styleDialog.close();
       };
-      $("#chips").innerHTML = CATS.map(
-        (c) =>
-          `<button class="chip${c === "All" ? " on" : ""}" data-c="${c}"><i class="fa-solid ${ICON[c] || "fa-shapes"}" aria-hidden="true"></i><span>${c}</span></button>`,
-      ).join("");
-      $("#chips").onclick = (e) => {
-        const b = e.target.closest(".chip");
-        if (!b) return;
-        cat = b.dataset.c;
-        document
-          .querySelectorAll(".chip")
-          .forEach((x) => x.classList.toggle("on", x === b));
+      CATS.forEach((category) => {
+        const option = document.createElement("option");
+        option.value = category;
+        option.textContent =
+          category === "All" ? "All categories" : category;
+        $("#category-filter").append(option);
+      });
+      $("#category-filter").value = cat;
+      $("#category-filter").onchange = (e) => {
+        cat = e.target.value;
         render();
       };
-      $("#q").oninput = render;
+      $("#q").oninput = () => {
+        render();
+      };
       function render() {
         const q = $("#q").value.trim().toLowerCase();
         grid.innerHTML = "";
@@ -3354,16 +3547,39 @@ document.getElementById("pp").onclick = (e) => {
             (!q || (d.c + d.b + d.t + d.it.join()).toLowerCase().includes(q)),
         );
         LST = L;
-        $("#cnt").textContent = L.length + " designs";
+        const visible = isGalleryPage
+          ? L
+          : !q && cat === "All"
+            ? FEATURED
+            : L.slice(0, 8);
+        $("#cnt").textContent =
+          visible.length < L.length
+            ? `${visible.length} shown · ${L.length} designs`
+            : `${L.length} ${L.length === 1 ? "design" : "designs"}`;
+        $("#see-all").hidden = isGalleryPage || visible.length >= L.length;
+        $("#see-all").textContent = `See all ${L.length} designs`;
+        const galleryUrl = new URL(window.location.href);
+        galleryUrl.searchParams.set("view", "all");
+        if (cat === "All") galleryUrl.searchParams.delete("category");
+        else galleryUrl.searchParams.set("category", cat);
+        if (q) galleryUrl.searchParams.set("q", q);
+        else galleryUrl.searchParams.delete("q");
+        galleryUrl.hash = "";
+        $("#see-all").href = galleryUrl.href;
         if (!L.length)
           grid.innerHTML =
             '<p class="empty">No designs match that search. Try a broader word like food, school or shop.</p>';
-        L.forEach((d, i) => {
+        visible.forEach((d, i) => {
           const a = document.createElement("article");
           a.className = "card";
           a.style.animationDelay = i * 45 + "ms";
           a.tabIndex = 0;
-          a.innerHTML = `<div class="th"><iframe tabindex="-1" title="${d.b} preview"></iframe></div><div class="mt"><b>${d.b}</b><small>${d.c}</small></div>`;
+          a.setAttribute("role", "button");
+          a.setAttribute(
+            "aria-label",
+            `Preview ${d.b}, a ${d.c} website concept`,
+          );
+          a.innerHTML = `<div class="th"><iframe tabindex="-1" title="${d.b} website preview"></iframe></div><div class="mt"><div><small>${d.c}</small><b>${d.b}</b><p>${d.t}</p></div><span class="card-arrow" aria-hidden="true">&rarr;</span></div>`;
           const th = a.querySelector(".th"),
             fr = a.querySelector("iframe");
           fr._d = d;
@@ -3374,7 +3590,10 @@ document.getElementById("pp").onclick = (e) => {
           a.onclick = (e) =>
             open(d, e.clientX || innerWidth / 2, e.clientY || innerHeight / 2);
           a.onkeydown = (e) => {
-            if (e.key === "Enter") open(d);
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              open(d);
+            }
           };
           grid.appendChild(a);
         });
